@@ -53,6 +53,15 @@ module.exports = {
           'stylus-loader'
         ],
       },
+      {
+        test: /\.jpe?g|png|gif|woff|eot|ttf|svg|mp4|webm$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            outputPath: 'assets/'
+          }
+        },
+      },
     ]
   },
   plugins: [
