@@ -14,6 +14,45 @@ module.exports = {
         use: 'babel-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCSSExtractPlugin.loader
+          },
+          'css-loader',
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: MiniCSSExtractPlugin.loader
+          },
+          'css-loader',
+          'sass-loader'
+        ],
+      },
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: MiniCSSExtractPlugin.loader
+          },
+          'css-loader',
+          'less-loader'
+        ],
+      },
+      {
+        test: /\.styl$/,
+        use: [
+          {
+            loader: MiniCSSExtractPlugin.loader
+          },
+          'css-loader',
+          'stylus-loader'
+        ],
+      },
     ]
   },
   plugins: [
