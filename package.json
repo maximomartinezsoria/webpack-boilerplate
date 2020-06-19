@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config ./webpack.dev.config.js"
+    "dev": "webpack-dev-server --config ./webpack.dev.config.js",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "Maximo Martinez Soria <maximo.martinezsoria@gmail.com>",
