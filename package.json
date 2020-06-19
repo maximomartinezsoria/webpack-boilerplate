@@ -9,6 +9,7 @@
   "author": "Maximo Martinez Soria <maximo.martinezsoria@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }
