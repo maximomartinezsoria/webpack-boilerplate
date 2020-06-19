@@ -7,6 +7,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js',
   },
+  mode: 'development',
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    open: true,
+  },
   module: {
     rules: [
       {
@@ -17,18 +22,14 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
+          'style-loader',
           'css-loader',
         ],
       },
       {
         test: /\.scss$/,
         use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
+          'style-loader',
           'css-loader',
           'sass-loader'
         ],
@@ -36,9 +37,7 @@ module.exports = {
       {
         test: /\.less$/,
         use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
+          'style-loader',
           'css-loader',
           'less-loader'
         ],
@@ -46,9 +45,7 @@ module.exports = {
       {
         test: /\.styl$/,
         use: [
-          {
-            loader: MiniCSSExtractPlugin.loader
-          },
+          'style-loader',
           'css-loader',
           'stylus-loader'
         ],
