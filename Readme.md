@@ -3,7 +3,7 @@ This repo is part of a post where we discuss [how to create a Webpack configurat
 
 ## Installation and use
 1. Clone the repo.
-2. Install dependencies: `npm i`.
+2. Install dependencies: `npm install`.
 3. Write your code.
 3. Run either production or development command.
 
